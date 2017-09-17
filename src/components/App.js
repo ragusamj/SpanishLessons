@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import Home from './Home';
 import Colores from './Colores';
+import Frutas from './Frutas';
 
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
@@ -16,6 +17,7 @@ class App extends Component {
         <div>
         <Route exact path="/" component={Home}/>
         <Route path="/colores" component={Colores}/>
+        <Route path="/frutas" component={Frutas}/>
         </div>
       </Router>
     );

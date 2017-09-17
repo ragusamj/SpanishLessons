@@ -42,7 +42,15 @@ export default {
                 ease: Power1.easeInOut,
             });
     },
-
+    
+    scale(target,duration,delay) {
+        return TweenMax
+            .from(target, duration, {
+                scale: 0,
+                ease: Power1.easeInOut,
+                delay:delay
+            });
+    },
 
 
 }
